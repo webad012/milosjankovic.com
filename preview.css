@@ -1,0 +1,36 @@
+/*<style type="text/css">*/
+
+.thumbnail{
+position: relative;
+z-index: 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 50;
+}
+
+.thumbnail span{ /*CSS za uvecanu sliku*/
+position: absolute;
+background-color:#FFFFFF;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS za uvecanu sliku*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS za uvecanu sliku na hover-u*/
+visibility: visible;
+top: 0;
+left: 60px; /*pozicija gde bi uvecana slika biti postavljena horizontalno */
+
+}
+
+/*</style>*/
